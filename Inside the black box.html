@@ -23,7 +23,7 @@
         you mesuare it. The fact that quants use algorithms to implement their
         strategies forced them to disciplined when they implement it.
       </p>
-    
+
       Note :
       <<ul>
         <<li>To read: the disposition to sell winners too early and ride losers
@@ -33,19 +33,24 @@
 
       <<h2>Chapter 2: an introduction to quantitative trading</h2>
 
-      What is the typical structure of a quantitative trading system?
+      <p>What is the typical structure of a quantitative trading system?
 
       A trading system has 3 modules:
-      Alpha model
-      It is designed to predict the future
-      Risk model
-      Limit exposure to the factors that are unlikely to generate returns but could drive losses
-      Transaction cost model
-      It help us to know if we the cost can be greater than some small benefice and the impact transaction costs have on our strategy
+        <ol>
+          <li>Alpha model: it is designed to predict the future</li>
+          <li>Risk model: limit exposure to the factors that are unlikely to
+            generate returns but could drive losses</li>
+          <li>Transaction cost model: it help us to know if we the cost can be
+            greater than some small benefice and the impact transaction costs
+            have on our strategy</li>
+          </ol>
+      </p>
 
-      All those modules go into a portfolio construction model which interacts with an execution model. On top of that you need data and make a research on those information in order to set up the trading system
+      <p>All those modules go into a portfolio construction model which interacts
+        with an execution model. On top of that you need data and make a research
+        on those information in order to set up the trading system</p>
 
-      Trend following strategy
+      <p>Note: Trend following strategy</p>
 
       <<h1>Part two: inside the black box</h1>
 
@@ -303,9 +308,39 @@
 
       To read P113
 
-      Chapter 7: Execution
+      <h2>Chapter 7: Execution</h2>
 
-      7.1 Order execution algorithms
+      <h3>7.1 Order execution algorithms<h3>
+        <p>The principal goal of execution algorithms, and the function of most
+          execution desks in general, is to minimize the cost of trading into
+          and out of positions.</p>
+
+        <p>If an order execution algorithm leaves an obvious footrprint, its
+          activities become predictable to other market participantsm and these
+          other participants may well react in such a way as to increase the
+          market impact and splippage incurred by such an algorithm.</p>
+
+        <p>An important question is hwo to measure the efficacy of an execution
+          algorithm. These are few concepts woth mentioning:
+          <ul>
+            <li>Mid-market = the average of the vest bid and the best offer
+              of an instrument. If, for example, one is able to buy at the best
+              bid, which is obviously below the then-current mid-market, that
+              particular transaction is considered to have been executed at a
+              favorable price</li>
+            <li>Volume-weigthed average price = benchmark for judging the quality
+              of an execution algorithm over multiple trades. The idea here is
+              that the WRAP may give a fair sense of how the day's volume were
+              priced. Since it is the weigthed average price at which the day's
+              trading was transacted, it is a reasonable start at thinking about
+              the efficacy of an algorithm.</li>
+          </ul>
+        </p>
+
+        <h4>Agressive versus Passive</h4>
+        <p>
+
+
 
     </body>
 </html>
