@@ -56,107 +56,139 @@
 
       <<h2>Chapter 3: alpha models, how quants make money</h2>
 
-      Alpha = value bring by the investor
+      <p>Alpha = value bring by the investor
       Beta = return that can attribute to market factor
 
-      Types of alpha models, theory-driven and data-driven
-      Theory-driven alpha model
-      Most of the strategies are from the following ones
-      Trend
-      Reversion
-      Technical sentiment
-      value/yield
-      Growth
-      Quality
+      Types of alpha models, theory-driven and data-driven</p>
+
+      <h3>Theory-driven alpha model</h3>
+      <ul>
+        <li>Most of the strategies are from the following ones</li>
+        <li>Trend</li>
+        <li>Reversion</li>
+        <li>Technical sentiment</li>
+        <li>value/yield</li>
+        <li>Growth</li>
+        <li>Quality</li>
+      </ul>
+
+      <h3>Data-driven models</h3>
       Different type of data:
-      Price-based
-      Fundamental data
+      <ul>
+        <li>Price-based</li>
+        <li>Fundamental data</li>
 
-      1.1 Strategies utilizing price related data
-      Trend following
-      You look for significant move in a given direction in an instrument
-      You can use moving average crossover (Ed Seykota)
+      <h4>1.1 Strategies utilizing price related data</h4>
+      <ul>
+        <li>Trend following</li>
 
-      To earn 50 percent a year the investor has to be ready to suffer a loss greater than 50 percent at some point. And this is the case for all the major investment strategies.
-      => The idea is to make enough money in the good times and manage the downside well enough in the bad times to earn money.
+      <p>You look for significant move in a given direction in an instrument
+      You can use moving average crossover (Ed Seykota)</p>
 
-      Mean reversion
-      One strategy is the statistical arbitrage
+      <p>To earn 50 percent a year the investor has to be ready to suffer a loss
+         greater than 50 percent at some point. And this is the case for all the
+          major investment strategies.
+      => The idea is to make enough money in the good times and manage the
+      downside well enough in the bad times to earn money.</p>
 
-      Trend tend to occur over longer time horizon, whereas reversion tend to happen over shorter-term time horizon
+        <li>Mean reversion</li>
+      <p>One strategy is the statistical arbitrage
 
-      Technical sentiment
+      Trend tend to occur over longer time horizon, whereas reversion tend to
+      happen over shorter-term time horizon</p>
+
+        <li>Technical sentiment</li>
       It is expressed through price, volume and volatility behaviour.
 
-      1.2 Strategies utilizing fundamental data
-      To read: the cross section of expected stock returns
-      value/yield
-      To read: anomalies in relationships between securities' yields and yield-surrogates
+      <h4>1.2 Strategies utilizing fundamental data</h4>
 
       Quant long short strategy:
 
-      QLS traders tend to rank stocks according to their attractiveness based on various factors, such as value, and then buy the higher-ranked stocks while selling short the lower-ranked ones.
+      <p>QLS traders tend to rank stocks according to their attractiveness based
+        on various factors, such as value, and then buy the higher-ranked stocks
+        while selling short the lower-ranked ones.</p>
 
-      Growth/sentiment
+      <p>Growth/sentiment</p>
 
-      Quality
-      All else being equal, buy quality assets and sell bad ones.
+      <p>Quality
+      All else being equal, buy quality assets and sell bad ones.</p>
 
-      Signals fall into 5 categories
-      Leverage
-      Diversity of revenue source
-      Volatility of revenues
-      Management quality
-      Fraud risk
-      Sentiment investor
+      <p>Signals fall into 5 categories
+      <ol>
+        <li>Leverage</li>
+        <li>Diversity of revenue source</li>
+        <li>Volatility of revenues</li>
+        <li>Management quality</li>
+        <li>Fraud risk</li>
+        <li>Sentiment investor</li>
+      </ol>
+      </p>
+      <h4>1.3 Implementing the strategies</h4>
+      <p>Forecast target
+      The first key component of implementation is to understand exactly what
+      the model is trying to forecast. Models can forecast direction, magnitude,
+      and/or duration of a mover and furthermore can include an assignment
+      confidence or probability for their forecast.</p>
 
-      Data-driven alpha model
+      <p>The signal strength -> you invest more on big signals.</p>
 
-      1.3 Implementing the strategies
-      Forecast target
-      The first key component of implementation is to understand exactly what the model is trying to forecast. Models can forecast direction, magnitude, and/or duration of a mover and furthermore can include an assignment confidence or probability for their forecast.
+      <p>Time horizon, differentiation is greater at shorter timescale than at
+      longer ones.</p>
+      <ul>
+        <li>High frequency strategies</li>
+          Within the day
+        <li>Short-term strategies</li>
+          One day to two weeks
+        <li>Medium-term</li>
+          Few weeks to few months
+        <li>Long-term</li>
+          Several months or longer
+      </ul>
 
-      The signal strength -> you invest more on big signals
-
-      Time horizon
-      Differentiation is greater at shorter timescale than at longer ones.
-      High frequency strategies
-      Within the day
-      Short-term strategies
-      One day to two weeks
-      Medium-term
-      Few weeks to few months
-      Long-term
-      Several months or longer
-
-      Bet structure
+      <p>Bet structure
       First big choice = geography
       Asset class
-      Instrument class
+      Instrument class</p>
 
       Investment universe
       Model definition
       Conditioning variables
-      There are two basic types of conditioning variables:
-      Modifying conditioner
+
+      <p>There are two basic types of conditioning variables:
+        <ul>
+          <li>Modifying conditioner
       It takes a given signal and changes whether or how it is used
-      For example stop-loss is a common conditioning variable to pair with a trend following
-      Secondary conditioner
-      It requires the agreement (or some other condition) across multiple types of signals to trigger a tradable forecast.
+      For example stop-loss is a common conditioning variable to pair with a
+      trend following.</li>
 
-      Run frequency
-      An explosion of diversity
+          <li>Secondary conditioner
+      It requires the agreement (or some other condition) across multiple types
+      of signals to trigger a tradable forecast.</li>
+        </ul>
+      </p>
 
-      1.4 Blending alpha models
-      Linear models
-      Idea = in linear models, the inclusion of one factor is independent of the inclusion of other factors, and each factor is expected to be additive, independently of the other factors hat might be included or excluded.
+      <p>Run frequency
+      An explosion of diversity</p>
 
-      Nonlinear models
-      Idea = the relationship between the variables used to make forecast either is not independent.
+      <h4>1.4 Blending alpha models</h4>
+      <p>
+        <ul>
+          <li>Linear models
+      Idea = in linear models, the inclusion of one factor is independent of the
+      inclusion of other factors, and each factor is expected to be additive,
+      independently of the other factors hat might be included or excluded.</li>
 
-      To read: The signal and the noise
+          <li>Nonlinear models
+      Idea = the relationship between the variables used to make forecast either
+      is not independent.</li>
+      </p>
+      <ul>To read:
+        <li>The signal and the noise</li>
+        <li>The cross section of expected stock returns</li>
+        <li>Value/yield</li>
+        <li>Anomalies in relationships between securities' yields and yield-surrogates</li>
 
-      Chapter 4: Risk models
+      <h2>Chapter 4: Risk models</h2>
 
       Risk exposure generally will not produce profits over the long run, but they can impact the returns of a strategy day to day. Most importantly, the quant is not attempting to forecast these exposures, usually because he cannot do so successfully.
 
